@@ -1,6 +1,6 @@
 import "./App.css";
 import "./base.css";
-
+import React from "react";
 import { triggerOnInputRef } from "./typeshuffle/utils";
 import { useEffect, useRef } from "react";
 

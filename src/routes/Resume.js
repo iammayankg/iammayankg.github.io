@@ -1,7 +1,7 @@
 import { triggerOnInputRef } from "../typeshuffle/utils";
 import { useEffect, useRef } from "react";
-
-import Container from "@mui/material/Container";
+import React from "react";
+// import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
 import "../base.css";
 
@@ -15,6 +15,7 @@ function Resume() {
 
   return (
     <div className="content" ref={inputRef}>
+      <CssBaseline />
       <h1>Hello world resume</h1>
     </div>
   );

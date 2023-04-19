@@ -1,5 +1,5 @@
 import { TypeShuffle } from "./typeShuffle";
-var WebFont = require("webfontloader");
+import WebFont from "webfontloader";
 // Preload images
 const preloadFonts = (id) => {
   return new Promise((resolve) => {
