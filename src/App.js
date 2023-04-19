@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
+import Link from '@mui/material/Link';
 
 function App() {
   const inputRef = useRef(null);
@@ -24,6 +25,7 @@ function App() {
           <div className="content" ref={inputRef}>
             <h1>Hello world</h1>
           </div>
+          <Link href="/resume">Resume</Link>
         </Container>
       </header>
     </div>
