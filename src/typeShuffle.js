@@ -188,7 +188,7 @@ export class TypeShuffle {
             }
             
             // doesn't count if it's an empty space
-            if ( cell.cache != '&nbsp;' ) {
+            if ( cell.cache !== '&nbsp;' ) {
                 ++iteration;
             }
 
