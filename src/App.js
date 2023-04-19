@@ -1,40 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import './base.css';
+import "./App.css";
+import "./base.css";
 
-import { preloadFonts } from './utils';
-import { TypeShuffle } from './typeShuffle';
-import { useEffect, useRef } from 'react';
+import { triggerOnInputRef } from "./typeshuffle/utils";
+import { useEffect, useRef } from "react";
 
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
   const inputRef = useRef(null);
 
-  const triggerIt = async () => {
-    await preloadFonts('biu0hfr');
-    const ts = new TypeShuffle(inputRef.current);
-    ts.trigger('fx1');
-  }
-    
-    useEffect(() => {
-      
-      if (inputRef.current !== null) {
-        triggerIt();
-
-      }
-      
-    });
-    
+  useEffect(() => {
+    if (inputRef.current !== null) {
+      triggerOnInputRef(inputRef);
+    }
+  }, [inputRef]);
 
   return (
     <div className="App">
+      <CssBaseline />
       <header className="App-header">
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-        <dl className="content" ref={inputRef}>
-          <dt>Hello world</dt>
-        </dl>
+        <Container component="main">
+          <div className="content" ref={inputRef}>
+            <h1>Hello world</h1>
+          </div>
         </Container>
       </header>
     </div>
