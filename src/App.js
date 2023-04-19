@@ -8,17 +8,18 @@ import { useEffect, useRef } from 'react';
 
 function App() {
   const inputRef = useRef(null);
+
+  const triggerIt = async () => {
+    await preloadFonts('biu0hfr');
+    const ts = new TypeShuffle(inputRef.current);
+    ts.trigger('fx1');
+  }
     
     useEffect(() => {
+      
       if (inputRef.current !== null) {
-        const ts = new TypeShuffle(inputRef.current);
-        ts.trigger('fx1');
+        triggerIt();
 
-        // [...document.querySelectorAll('.effects > button')].forEach(button => {
-        //     button.addEventListener('click', () => {
-        //         ts.trigger(`fx${button.dataset.fx}`);
-        //     });
-        // });
       }
       
     });
@@ -29,7 +30,6 @@ function App() {
       <header className="App-header">
         <dl className="content" ref={inputRef}>
           <dt>Hello world</dt>
-          <dd>asdfdsf</dd>
         </dl>
       </header>
     </div>
