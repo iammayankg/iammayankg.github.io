@@ -6,8 +6,8 @@
 
 :root {
 	font-size: 18px;
-	--color-text: #fff;
-	--color-bg: #000;
+	--color-text: #000;
+	--color-bg: #fff;
 	--color-link: #61dca3;
 	--color-link-hover: #fff;
 }
