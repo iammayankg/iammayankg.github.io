@@ -6,6 +6,9 @@ import { preloadFonts } from './utils';
 import { TypeShuffle } from './typeShuffle';
 import { useEffect, useRef } from 'react';
 
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+
 function App() {
   const inputRef = useRef(null);
 
@@ -28,9 +31,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
         <dl className="content" ref={inputRef}>
           <dt>Hello world</dt>
         </dl>
+        </Container>
       </header>
     </div>
   );
