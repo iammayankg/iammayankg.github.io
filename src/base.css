@@ -6,7 +6,7 @@
 
 :root {
   font-size: 18px;
-  --color-text: #fff;
+  --color-text: #009936;
   --color-bg: #000;
   --color-link: #61dca3;
   --color-link-hover: #048d1b;
@@ -183,8 +183,8 @@ main {
 }
 
 .content {
-  display: flex;
-  gap: 1rem;
+  /* display: flex; */
+  /* gap: 1rem; */
   max-width: 830px;
   padding: 7vh 0rem 0;
 }
