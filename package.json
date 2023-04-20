@@ -25,7 +25,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "style": "npx prettier --write src/",
-    "eslint": "npx eslint src/"
+    "eslint": "npx eslint src/",
+    "copy-cmaps": "node ./scripts/copy-cmaps.mjs",
+    "copy-standard-fonts": "node ./scripts/copy-standard-fonts.mjs",
+    "copy-worker": "node ./scripts/copy-worker.mjs"
   },
   "eslintConfig": {
     "extends": [

@@ -3,7 +3,6 @@ import "./base.css";
 import React from "react";
 import { triggerOnInputRef } from "./typeshuffle/utils";
 import { useEffect, useRef } from "react";
-import CssBaseline from "@mui/material/CssBaseline";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 
@@ -18,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <CssBaseline />
+     
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <div className="content" ref={inputRef}>

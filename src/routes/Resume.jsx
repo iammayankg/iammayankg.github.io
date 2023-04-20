@@ -1,8 +1,6 @@
 import { triggerOnInputRef } from "../typeshuffle/utils";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
-// import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import "../base.css";
 import "./resume.css";
 import Link from "@mui/material/Link";
@@ -25,7 +23,6 @@ function Resume() {
   }
   return (
     <>
-      <CssBaseline />
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div className="content" ref={inputRef}>
           <Link href="/">Home</Link>
