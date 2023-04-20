@@ -183,7 +183,7 @@ main {
 }
 
 .content {
-  display: grid;
+  display: flex;
   gap: 1rem;
   max-width: 830px;
   padding: 7vh 0rem 0;
@@ -249,4 +249,12 @@ dd {
   .content {
     grid-template-columns: 15ch 1fr;
   }
+}
+
+.resume-container {
+  border-style: inset;
+}
+
+.homepage-name {
+  font-size: 3rem;
 }
