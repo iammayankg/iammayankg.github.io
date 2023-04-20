@@ -19,25 +19,18 @@ function App() {
   return (
     <div className="App">
       <CssBaseline />
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="stretch"
-      >
+      <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <div className="content" ref={inputRef}>
             <p className="homepage-name">Mayank Gupta</p>
           </div>
-          
         </div>
       </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="stretch"
-      ><div>
-      <Link href="/resume">Resume</Link>
-    </div></Box>
+      <Box display="flex" justifyContent="center" alignItems="stretch">
+        <div>
+          <Link href="/resume">Resume</Link>
+        </div>
+      </Box>
     </div>
   );
 }
