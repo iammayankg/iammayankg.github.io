@@ -4,6 +4,8 @@ import React from "react";
 // import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
 import "../base.css";
+import Link from "@mui/material/Link";
+import Box from "@mui/material/Box";
 
 function Resume() {
   const inputRef = useRef(null);
@@ -14,10 +16,20 @@ function Resume() {
   }, [inputRef]);
 
   return (
-    <div className="content" ref={inputRef}>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+    >
       <CssBaseline />
-      <h1>Hello world resume</h1>
-    </div>
+      <div>
+        <div className="content" ref={inputRef}>
+          <h1>Hello world resume</h1>
+        </div>
+        <Link href="/">Home</Link>
+      </div>
+    </Box>
   );
 }
 

@@ -186,7 +186,7 @@ main {
   display: grid;
   gap: 1rem;
   max-width: 830px;
-  padding: 7vh 2rem 0;
+  padding: 7vh 0rem 0;
 }
 
 dt {
