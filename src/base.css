@@ -7,7 +7,7 @@
 :root {
   font-size: 18px;
   --color-text: #fff;
-  --color-bg:#000;
+  --color-bg: #000;
   --color-link: #61dca3;
   --color-link-hover: #048d1b;
 }
@@ -256,5 +256,8 @@ dd {
 }
 
 .homepage-name {
-  font-size: 3rem;
+  font-size: 5rem;
+}
+.homepage-subheading {
+  font-size: 2rem;
 }

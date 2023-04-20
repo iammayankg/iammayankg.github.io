@@ -17,14 +17,15 @@ function App() {
 
   return (
     <div className="App">
-     
-      <Box display="flex" justifyContent="center" alignItems="stretch">
-        <div>
-          <div className="content" ref={inputRef}>
-            <p className="homepage-name">Mayank Gupta</p>
-          </div>
-        </div>
-      </Box>
+      <div className="content2" ref={inputRef}>
+        <Box display="flex" justifyContent="center" alignItems="stretch">
+          <div className="homepage-name">Mayank Gupta</div>
+        </Box>
+        <Box display="flex" justifyContent="center" alignItems="stretch">
+          <div className="homepage-subheading">Dreamer, doer</div>
+        </Box>
+      </div>
+
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <Link href="/resume">Resume</Link>
