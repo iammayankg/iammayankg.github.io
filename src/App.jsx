@@ -23,7 +23,9 @@ function App() {
             <div className="homepage-name">Mayank Gupta</div>
           </Box>
           <Box display="flex" justifyContent="center" alignItems="stretch">
-            <div className="homepage-subheading">Software engineer. Dreamer</div>
+            <div className="homepage-subheading">
+              Software engineer. Dreamer
+            </div>
           </Box>
         </div>
       </Box>
