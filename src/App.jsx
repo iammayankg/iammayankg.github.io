@@ -3,7 +3,7 @@ import "./base.css";
 import React from "react";
 import { triggerOnInputRef } from "./typeshuffle/utils";
 import { useEffect, useRef } from "react";
-// import Link from "@mui/material/Link";
+import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 
 function App() {
@@ -23,17 +23,15 @@ function App() {
             <div className="homepage-name">Mayank Gupta</div>
           </Box>
           <Box display="flex" justifyContent="center" alignItems="stretch">
-            <div className="homepage-subheading">
-              Software engineer. Dreamer
-            </div>
+            <div className="homepage-subheading">Software engineer.</div>
           </Box>
         </div>
       </Box>
-      {/* <Box display="flex" justifyContent="center" alignItems="stretch">
+      <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
-          <Link href="/resume.pdf">Resume</Link>
+          <Link href="/bookshelf">BookShelf</Link>
         </div>
-      </Box> */}
+      </Box>
     </div>
   );
 }
