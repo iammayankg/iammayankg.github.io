@@ -19,7 +19,7 @@ function Bookshelf() {
       const b = await fetch("/books.json");
       const bs = await b.json();
       bs.sort((a, b) => {
-        return a["Title"].toUpperCase() < b["Title"].toUpperCase() ? -1 : 1;
+        return a["Authors"].toUpperCase() < b["Authors"].toUpperCase() ? -1 : 1;
       });
       setBooks(bs);
     };
