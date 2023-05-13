@@ -17,7 +17,8 @@ function Bookshelf() {
   useEffect(() => {
     const _cb = async () => {
       const b = await fetch("/books.json");
-      const bs = await b.json();
+      let bs = await b.json();
+      bs = bs.filter((book) => book["available"] !== false);
       bs.sort((a, b) => {
         return a["Authors"].toUpperCase() < b["Authors"].toUpperCase() ? -1 : 1;
       });
