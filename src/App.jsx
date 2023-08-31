@@ -25,6 +25,11 @@ function App() {
           <Box display="flex" justifyContent="center" alignItems="stretch">
             <div className="homepage-subheading">Software engineer.</div>
           </Box>
+          <Box display="flex" justifyContent="center" alignItems="stretch">
+            <div>
+              <p>may reply to emails at: iamanugly@duck.com</p>
+            </div>
+          </Box>
         </div>
       </Box>
       <Box display="flex" justifyContent="center" alignItems="stretch">
