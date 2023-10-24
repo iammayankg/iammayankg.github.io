@@ -36,7 +36,10 @@ function Bookshelf() {
             <Link href="/">Home</Link>
           </div>
           <div ref={inputRef}>
-            <h4>These books are currently on my bookshelf. The list generally rotates as I pick new interests and give-away older ones.</h4>
+            <h4>
+              These books are currently on my bookshelf. The list generally
+              rotates as I pick new interests and give-away older ones.
+            </h4>
             <p>I have been spending more time on audio books recently.</p>
           </div>
           <div>

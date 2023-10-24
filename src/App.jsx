@@ -18,13 +18,20 @@ function App() {
   return (
     <div className="App">
       <Box display="flex" justifyContent="center" alignItems="stretch">
-        <div className="content" ref={inputRef}>
+        <div className="content">
           <Box display="flex" justifyContent="center" alignItems="stretch">
             <div className="homepage-name">Mayank Gupta</div>
           </Box>
           <Box display="flex" justifyContent="center" alignItems="stretch">
-            <div className="homepage-subheading">Software engineer.</div>
+            <div className="homepage-subheading">Software engineering</div>
           </Box>
+          <Box display="flex" justifyContent="center" alignItems="stretch">
+            <div ref={inputRef}>and algorithm analysi-syzation!</div>
+          </Box>
+        </div>
+      </Box>
+      <Box display="flex" justifyContent="center" alignItems="stretch">
+        <div className="content">
           <Box display="flex" justifyContent="center" alignItems="stretch">
             <div>
               <p>email: iamanugly@duck.com</p>

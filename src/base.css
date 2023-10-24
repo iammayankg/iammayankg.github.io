@@ -261,3 +261,9 @@ dd {
 .homepage-subheading {
   font-size: 2rem;
 }
+.slanted {
+  /* font-size: 40px; */
+  text-transform: uppercase;
+  transform: rotate(-50deg) skew(-50deg);
+  /* background-color: #ffc; */
+}
