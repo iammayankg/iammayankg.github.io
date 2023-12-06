@@ -26,6 +26,7 @@ function Resume() {
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div className="content" ref={inputRef}>
           <Link href="/">Home</Link>
+          <span> | </span>
           <Link href="/resume.pdf">Download</Link>
         </div>
       </Box>

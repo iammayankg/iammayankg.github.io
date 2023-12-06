@@ -46,6 +46,11 @@ function App() {
       </Box>
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
+          <Link href="/resume">Resume</Link>
+        </div>
+      </Box>
+      <Box display="flex" justifyContent="center" alignItems="stretch">
+        <div>
           <Link href="https://blog.bayesrule.me">Blog</Link>
         </div>
       </Box>
