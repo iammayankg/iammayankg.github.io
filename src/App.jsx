@@ -44,11 +44,11 @@ function App() {
           <Link href="/bookshelf">BookShelf</Link>
         </div>
       </Box>
-      {/* <Box display="flex" justifyContent="center" alignItems="stretch">
+      <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
-          <Link href={process.env.PUBLIC_URL + '/resume.pdf'}>Resume</Link>
+          <Link href='https://github.com/iammayankg/iammayankg.github.io/blob/b055ef151737fa8bc846aebe776763bff20fae9d/public/resume.pdf'>Resume</Link>
         </div>
-      </Box> */}
+      </Box>
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <Link href="https://blog.bayesrule.me">Blog</Link>
