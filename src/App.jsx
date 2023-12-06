@@ -5,6 +5,7 @@ import { triggerOnInputRef } from "./typeshuffle/utils";
 import { useEffect, useRef } from "react";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+import resumePDF from "./resume.pdf";
 
 function App() {
   const inputRef = useRef(null);
@@ -46,7 +47,7 @@ function App() {
       </Box>
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
-          <Link href="/resume.pdf">Resume</Link>
+          <Link href={resumePDF}>Resume</Link>
         </div>
       </Box>
       <Box display="flex" justifyContent="center" alignItems="stretch">
