@@ -44,11 +44,11 @@ function App() {
           <Link href="/bookshelf">BookShelf</Link>
         </div>
       </Box>
-      <Box display="flex" justifyContent="center" alignItems="stretch">
+      {/* <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <Link href="/resume">Resume</Link>
         </div>
-      </Box>
+      </Box> */}
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <Link href="https://blog.bayesrule.me">Blog</Link>
