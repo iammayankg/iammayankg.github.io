@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Resume from "./routes/Resume";
+// import Resume from "./routes/Resume";
 import Bookshelf from "./routes/Bookshelf";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,10 +12,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
-  {
-    path: "/resume",
-    element: <Resume />,
-  },
+  // {
+  //   path: "/resume",
+  //   element: <Resume />,
+  // },
   {
     path: "/bookshelf",
     element: <Bookshelf />,
