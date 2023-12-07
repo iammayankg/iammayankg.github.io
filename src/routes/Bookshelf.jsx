@@ -8,6 +8,7 @@ import Link from "@mui/material/Link";
 
 function Bookshelf() {
   const [books, setBooks] = useState([]);
+  const [audibleBooks, setAudibleBooks] = useState([]);
   const inputRef = useRef(null);
   useEffect(() => {
     if (inputRef.current !== null) {
@@ -25,6 +26,20 @@ function Bookshelf() {
       setBooks(bs);
     };
     if (books.length === 0) {
+      _cb();
+    }
+  });
+  useEffect(() => {
+    const _cb = async () => {
+      const b = await fetch("/books-audible.json");
+      let bs = await b.json();
+      // bs = bs.filter((book) => book["available"] !== false);
+      bs.sort((a, b) => {
+        return a["author"].toUpperCase() < b["author"].toUpperCase() ? -1 : 1;
+      });
+      setAudibleBooks(bs);
+    };
+    if (audibleBooks.length === 0) {
       _cb();
     }
   });
@@ -52,6 +67,21 @@ function Bookshelf() {
                     <MenuBookIcon />
                   </Link>
                   {b["Title"]}- {b["Authors"]}
+                </div>
+              );
+            })}
+          </div>
+          <div>
+            <h3>Here&apos;s the list of my audible collection</h3>
+          </div>
+          <div>
+            {audibleBooks.map((b) => {
+              return (
+                <div key={b["asin"]}>
+                  <Link href={b["info_link"]}>
+                    <MenuBookIcon />
+                  </Link>
+                  {b["title"]}- {b["author"]}
                 </div>
               );
             })}
