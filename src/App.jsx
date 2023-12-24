@@ -26,7 +26,7 @@ function App() {
             <div className="homepage-subheading">Software engineering</div>
           </Box>
           <Box display="flex" justifyContent="center" alignItems="stretch">
-            <div ref={inputRef}>and algorithm analysi-syzation!</div>
+            <div ref={inputRef}>and algorithm analysis.</div>
           </Box>
         </div>
       </Box>
