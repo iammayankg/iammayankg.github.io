@@ -39,11 +39,11 @@ function App() {
           </Box>
         </div>
       </Box>
-      <Box display="flex" justifyContent="center" alignItems="stretch">
+      {/* <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <Link href="/bookshelf">BookShelf</Link>
         </div>
-      </Box>
+      </Box> */}
       <Box display="flex" justifyContent="center" alignItems="stretch">
         <div>
           <Link href="https://github.com/iammayankg/iammayankg.github.io/blob/master/public/resume.pdf">
